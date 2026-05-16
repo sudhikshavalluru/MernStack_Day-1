@@ -75,11 +75,10 @@ fw={700}
             variant="gradient"
             gradient={{ from: "grape", to: "indigo" }}
             onClick={() =>
-              isLoggedIn ? navigate("/url/shortener") : navigate("/login")
+              !isLoggedIn && navigate("/login")
             }
           >
-            Get Started
-          </Button>
+            Get Started          </Button>
         </div>
       </Container>
     </div>
